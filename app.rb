@@ -14,3 +14,9 @@ get '/' do
   @title = 'Добре дошли в машината за гласуване!'
   erb :index
 end
+
+post '/cast' do
+  @title = 'Благодарим за вашия глас!'
+  @vote  = params['vote']
+  erb :cast
+end
