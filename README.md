@@ -2,6 +2,8 @@
 
 Примерното приложение от [ръководството за Sinatra](http://railsgirls.hno3.org/sinatra-app-bg/), използвано в [Rails Girls уъркшопи](http://railsgirls.com/sofia) в България.
 
+Можете да тествате приложението тук: <https://rails-girls-sofia-voter.herokuapp.com/>
+
 ## Инсталация
 
 Трябва да имате инсталирана скорошна версия на [езика за програмиране Ruby](https://www.ruby-lang.org/en/) и [библиотеката Sinatra](http://www.sinatrarb.com/).
@@ -20,4 +22,4 @@ gem install sinatra
 ruby app.rb
 ```
 
-Вече би трябвало да може да отворите в браузъра си <http://localhost:4567/>.
+Вече би трябвало да може да отворите в браузъра си приложението: <http://localhost:4567/>
