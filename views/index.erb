@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='UTF-8' />
+    <title>Машина за гласуване</title>
+    <link href='//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css' rel='stylesheet' />
+  </head>
+  <body class='container'>
+    <p>Къде да обядваме?</p>
+    <form action='cast' method='post'>
+      <ul class='unstyled'>
+        <% CHOICES.each do |place_id, place_name| %>
+          <li>
+            <label class='radio'>
+              <input type='radio' name='vote' value='<%= place_id %>' id='vote_<%= place_id %>' />
+              <%= place_name %>
+            </label>
+          </li>
+        <% end %>
+      </ul>
+      <button type='submit' class='btn btn-primary'>Гласувай!</button>
+    </form>
+  </body>
+</html>
