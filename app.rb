@@ -11,5 +11,6 @@ CHOICES = {
 }
 
 get '/' do
+  @title = 'Добре дошли в машината за гласуване!'
   erb :index
 end
