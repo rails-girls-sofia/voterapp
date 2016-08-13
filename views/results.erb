@@ -1,0 +1,10 @@
+<table class='table table-hover table-striped'>
+  <% CHOICES.each do |place_id, place_name| %>
+    <tr>
+      <th><%= place_name %></th>
+      <td><%= @votes[place_id] || 0 %>
+      <td><%= '#' * (@votes[place_id] || 0) %></td>
+    </tr>
+  <% end %>
+</table>
+<p><a href='/'>Гласувайте още</a></p>

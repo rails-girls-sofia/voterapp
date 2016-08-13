@@ -20,3 +20,8 @@ post '/cast' do
   @vote  = params['vote']
   erb :cast
 end
+
+get '/results' do
+  @votes = { 'happy' => 7, 'sun-moon' => 5 }
+  erb :results
+end
